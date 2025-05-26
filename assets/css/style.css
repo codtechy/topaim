@@ -1,63 +1,7 @@
 @charset "UTF-8";
-/* ---------------------------------
-Template Name: Talim - School University & Online Education Template
-Author: CodeBasket
-Version: 1.0
 
------------------------------------------------------------------------------------
-Front End is Developed By Shaikh Abu Amer on behalf of Codebasket
------------------------------------------------------------------------------------
 
-CSS INDEX
-=================== 
-01. CUSTOM PROPERTIES
-02. GLOBAL
-03. COMPONENTS
 
-04. HEADER
-05. BANNER
-06. SERVICES
-07. ABOUT
-08. COURSES
-09. TESTIMONIAL
-10. SUB-BANNER
-11. STAFF
-12. BLOG
-13. CTA
-14. PROGRAMS
-15. EVENTS
-16. CONSULT
-17. ADMISSION
-18. INNOVATIONS
-19. CAMPUS
-20. ACADEMIC
-21. NEWS
-22. LATEST ARTICLES
-23. VIDEOS
-24. POP ARTICLES
-25. SOCIALS
-26. MEMBERS
-27. CLASS
-28. TICKER
-29. CATEGORIES
-30. CONTACT
-31. PRICING
-32. FAQ
-33. FOOTER
-34. Features
-35. Fees
-36. Fees
-37. Instagram
-
--------------- PAGES ----------------
-37. EVENT DETAILS
-38. COURSE DETAILS
-39. STAFF PROFILE
-40. BLOG DETAILS
-
-******************************************************* 
-*************************************************************** */
-/*----- 01 CUSTOM PROPERTIES-----*/
 @import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&amp;display=swap");
 
 :root {
@@ -14136,12 +14080,12 @@ textarea::placeholder {
 
 .tl-16-course-title {
   font-family: 'Poppins', sans-serif;
-font-size: 20px;
-font-weight: 600;
-color: var(--black);
-margin: 20px 0 10px;
-text-transform:;
-line-height: 26px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 20px 0 10px;
+  text-transform: ;
+  line-height: 26px;
 }
 
 .tl-16-course-desc {
@@ -16028,7 +15972,7 @@ line-height: 26px;
 }
 
 .tl-10-testimonial .owl-item.active.center .tl-10-single-testimony {
-  background-color: #36348e;
+  background-color: #03989e;
   color: var(--white);
   box-shadow: 0 30px 80px rgba(54, 52, 142, 0.3);
   opacity: 100%;
@@ -16198,7 +16142,7 @@ line-height: 26px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  color: var(--tl-btn-bg);
+  /* color: var(--tl-btn-bg); */
 }
 
 @media screen and (max-width: 767px) {
@@ -24795,7 +24739,8 @@ line-height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
+  color: white;
 }
 
 .tl-social.tl-type-1 .tl-social-links a:hover {
@@ -27087,7 +27032,8 @@ line-height: 26px;
 .tl-footer {
   background: url(../images/tl-10/footer-bg.png) no-repeat center center;
   background-size: cover;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
+  color: white;
 }
 
 .tl-footer-top {
@@ -27143,7 +27089,7 @@ line-height: 26px;
 }
 
 .tl-footer-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .tl-footer-links a:hover {

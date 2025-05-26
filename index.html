@@ -33,22 +33,65 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- dark version css -->
         <link rel="stylesheet" href="assets/css/dark-v.css">
+      
     </head>
     <body>
         <!-- preloader start 👇-->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="loading-content">
-                        <img class="loading-logo-text"
-                            src="assets/images/logo/logo-text.png" alt="Kidba">
-                        <!-- <div class="loading-stroke">
-                            <img class="loading-logo-icon" src="assets/images/logo/logo-icon.png" alt="Pen">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        <style>
+            /* Preloader background */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* change to your theme background */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner keyframe */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: fade-out class */
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+        </style>
+        <div id="preloader">
+            <div class="spinner"></div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const preloader = document.getElementById('preloader');
+              setTimeout(() => {
+                preloader.classList.add('fade-out');
+                setTimeout(() => {
+                  preloader.style.display = 'none';
+                }, 500);
+              }, 1000); // hides after 1 second
+            });
+          </script>
+          
         <!-- preloader end 👆-->
         <!-- sidebar area start 👇-->
         <div class="kidba-menu-sidebar">
@@ -390,12 +433,11 @@
                     id="tl-courses-slider-nav"></div>
             </div>
             <div class="container">
-                <div
-                    class="tl-16-course-slider slider-wrapper overflow-none dots-none">
+                <div class="tl-13-courses-slider owl-carousel">
                 
                     <div class="tl-16-course">
                         <div class="tl-16-course-thumb">
-                            <img src="assets/images/tl-16/class4.png" alt>
+                            <img src="assets/images/tl-16/1.jpg" alt>
                         </div>
                         <div class="tl-16-course-info">
                             <div class="tl-16-course-meta">
@@ -424,7 +466,7 @@
                     </div>
                     <div class="tl-16-course">
                         <div class="tl-16-course-thumb">
-                            <img src="assets/images/tl-16/class4.png" alt>
+                            <img src="assets/images/tl-16/2.jpg" alt>
                         </div>
                         <div class="tl-16-course-info">
                             <div class="tl-16-course-meta">
@@ -452,7 +494,7 @@
                         </div>
                     </div><div class="tl-16-course">
                         <div class="tl-16-course-thumb">
-                            <img src="assets/images/tl-16/class4.png" alt>
+                            <img src="assets/images/tl-16/3.jpg" alt>
                         </div>
                         <div class="tl-16-course-info">
                             <div class="tl-16-course-meta">
@@ -482,7 +524,7 @@
                     </div>
                     <div class="tl-16-course">
                         <div class="tl-16-course-thumb">
-                            <img src="assets/images/tl-16/class4.png" alt>
+                            <img src="assets/images/tl-16/4.jpg" alt>
                         </div>
                         <div class="tl-16-course-info">
                             <div class="tl-16-course-meta">
@@ -513,7 +555,7 @@
 
                     <div class="tl-16-course">
                         <div class="tl-16-course-thumb">
-                            <img src="assets/images/tl-16/class4.png" alt>
+                            <img src="assets/images/tl-16/5.jpg" alt>
                         </div>
                         <div class="tl-16-course-info">
                             <div class="tl-16-course-meta">
@@ -555,16 +597,7 @@
         <div class="container">
           <div class="tl-10-section-heading">
             <h2 class="tl-section-title">
-              Trusted by over 40,000+ Students Have To Say
-              <span class="tl-10-users-img">
-                <img src="assets/images/tl-10/04.png" alt="user" />
-                <img src="assets/images/tl-10/03.png" alt="user" />
-                <img src="assets/images/tl-10/02.png" alt="user" />
-                <span class="last-img">
-                  <img src="assets/images/tl-10/01.png" alt="user" />
-                  <span class="last-img-txt">2k+</span>
-                </span>
-              </span>
+              Trusted Students Have To Say
             </h2>
           </div>
   
@@ -577,11 +610,7 @@
               </p>
   
               <div class="tl-10-single-testimony-reviewer">
-                <img
-                  src="assets/images/tl-10/02.png"
-                  alt="Person"
-                  class="tl-10-single-testimony-reviewer-img"
-                />
+            
                 <div class="tl-10-single-testimony-reviewer-info">
                   <h6 class="tl-10-single-testimony-reviewer-name">
                     Brian Cumin
@@ -601,11 +630,7 @@
               </p>
   
               <div class="tl-10-single-testimony-reviewer">
-                <img
-                  src="assets/images/tl-10/03.png"
-                  alt="Person"
-                  class="tl-10-single-testimony-reviewer-img"
-                />
+           
                 <div class="tl-10-single-testimony-reviewer-info">
                   <h6 class="tl-10-single-testimony-reviewer-name">
                     Brian Cumin
@@ -625,11 +650,7 @@
               </p>
   
               <div class="tl-10-single-testimony-reviewer">
-                <img
-                  src="assets/images/tl-10/04.png"
-                  alt="Person"
-                  class="tl-10-single-testimony-reviewer-img"
-                />
+            
                 <div class="tl-10-single-testimony-reviewer-info">
                   <h6 class="tl-10-single-testimony-reviewer-name">
                     Brian Cumin
@@ -682,8 +703,8 @@ with our expert counselors.
                    Popular Study Abroad Destinations
                </h2>
            </div>
-           <div class="tl-16-courses-nav tl-nav-type-1 tl-white-1"
-               id="tl-courses-slider-nav"></div>
+           <!-- <div class="tl-16-courses-nav tl-nav-type-1 tl-white-1"
+               id="tl-courses-slider-nav"></div> -->
        </div>
        <div class="container">
            <div
@@ -691,7 +712,7 @@ with our expert counselors.
            
                <div class="tl-16-course">
                    <div class="tl-16-course-thumb">
-                       <img src="assets/images/tl-16/class4.png" alt>
+                       <img src="assets/images/tl-16/1a.jpg" alt>
                    </div>
                    <div class="tl-16-course-info">
                        <div class="tl-16-course-meta">
@@ -721,7 +742,7 @@ with our expert counselors.
                </div>
                <div class="tl-16-course">
                    <div class="tl-16-course-thumb">
-                       <img src="assets/images/tl-16/class4.png" alt>
+                       <img src="assets/images/tl-16/2a.jpg" alt>
                    </div>
                    <div class="tl-16-course-info">
                        <div class="tl-16-course-meta">
@@ -750,7 +771,7 @@ with our expert counselors.
                    </div>
                </div><div class="tl-16-course">
                    <div class="tl-16-course-thumb">
-                       <img src="assets/images/tl-16/class4.png" alt>
+                       <img src="assets/images/tl-16/3a.jpg" alt>
                    </div>
                    <div class="tl-16-course-info">
                        <div class="tl-16-course-meta">
@@ -781,7 +802,7 @@ with our expert counselors.
                </div>
                <div class="tl-16-course">
                    <div class="tl-16-course-thumb">
-                       <img src="assets/images/tl-16/class4.png" alt>
+                       <img src="assets/images/tl-16/4a.jpg" alt>
                    </div>
                    <div class="tl-16-course-info">
                        <div class="tl-16-course-meta">
@@ -813,7 +834,7 @@ with our expert counselors.
 
                <div class="tl-16-course">
                    <div class="tl-16-course-thumb">
-                       <img src="assets/images/tl-16/class4.png" alt>
+                       <img src="assets/images/tl-16/5a.jpg" alt>
                    </div>
                    <div class="tl-16-course-info">
                        <div class="tl-16-course-meta">
@@ -846,7 +867,7 @@ with our expert counselors.
 
                <div class="tl-16-course">
                 <div class="tl-16-course-thumb">
-                    <img src="assets/images/tl-16/class4.png" alt>
+                    <img src="assets/images/tl-16/6a.jpg" alt>
                 </div>
                 <div class="tl-16-course-info">
                     <div class="tl-16-course-meta">
@@ -879,10 +900,11 @@ with our expert counselors.
             </div>
            </div>
        </div>
+    
    </section>
 
         <!-- FOOTER SECTION STARTS HERE -->
-        <footer class="tl-footer tl-16-footer" data-bg-color="#0B1346">
+        <footer class="tl-footer tl-16-footer" data-bg-color="#03989e">
             <div class="tl-footer-top">
                 <div class="container">
                     <div class="row">
@@ -891,7 +913,7 @@ with our expert counselors.
                                 class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
                                 <a href="index.html" class="logo">
                                     <img
-                                        src="assets/images/logos/tl-12-logo-light.png"
+                                        src="assets/images/logos/footer.png"
                                         alt="logo">
                                 </a>
                                 <p
@@ -932,16 +954,16 @@ with our expert counselors.
                                     Link</h5>
                                 <ul class="tl-footer-links">
                                     <li>
-                                        <a href="#">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">About us</a>
+                                        <a href="about.html">About us</a>
                                     </li>
                                     <li>
-                                        <a href="#">Courses</a>
+                                        <a href="index.html#courses">Courses</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact us</a>
+                                        <a href="contact.html">Contact us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -956,20 +978,20 @@ with our expert counselors.
                                         <img
                                             src="assets/images/tl-16/icon-location.png"
                                             alt>
-                                        <span>2767 Sunrise Street, NY 1002,
-                                            USA</span>
+                                        <span>Tsotne Dadiani Street 59 Tbilisi,Georgia</span>
                                     </li>
                                     <li>
                                         <img
                                             src="assets/images/tl-16/icon-email.png"
                                             alt>
-                                        <span>company@gmail.com</span>
+                                        <span>topaimmail@gmail.com</span>
                                     </li>
                                     <li>
                                         <img
                                             src="assets/images/tl-16/icon-phone.png"
                                             alt>
-                                        <span>+880 1234-569856</span>
+                                        <span>+9955977 76450</span> |
+                                        <span>+9188911 52938</span>
                                     </li>
                                 </ul>
                             </div>

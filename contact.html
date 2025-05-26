@@ -1,42 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Mirrored from codebasket.xyz/template/talim/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 May 2025 05:01:09 GMT -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Talim - School University & Online Education Template</title>
-        <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
+        <title>Top Aim Educare</title>
+        <link rel="shortcut icon" href="assets/images/logo/favicon.ico"
+            type="image/x-icon">
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="assets/vendor/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/icofont.min.css">
         <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
-        <link rel="stylesheet" href="assets/vendor/font-awesome/sharp-regular.min.css">
-        <link rel="stylesheet" href="assets/vendor/font-awesome/sharp-solid.min.css">
+        <link rel="stylesheet"
+            href="assets/vendor/font-awesome/sharp-regular.min.css">
+        <link rel="stylesheet"
+            href="assets/vendor/font-awesome/sharp-solid.min.css">
         <link rel="stylesheet" href="assets/vendor/mean-menu/meanmenu.min.css">
+        <link rel="stylesheet"
+            href="assets/vendor/eocjs-newsticker/eocjs-newsticker.css">
+        <link rel="stylesheet"
+            href="assets/vendor/flag-icons/flag-icons.min.css">
+        <link rel="stylesheet"
+            href="assets/vendor/swiper-js/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/vendor/slick-slider/slick.css">
-        <link rel="stylesheet" href="assets/vendor/eocjs-newsticker/eocjs-newsticker.css">
+        <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+        <link rel="stylesheet"
+            href="assets/vendor/odometer/odometer-default.min.css">
+        <link rel="stylesheet"
+            href="assets/vendor/odometer/odometer-default.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- dark version css -->
         <link rel="stylesheet" href="assets/css/dark-v.css">
     </head>
     <body>
-        <!-- preloader start -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="loading-content">
-                        <img class="loading-logo-text" src="assets/images/logo/logo-text.png" alt="Kidba">
-                        <div class="loading-stroke">
-                            <img class="loading-logo-icon" src="assets/images/logo/logo-icon.png" alt="Pen">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- preloader start 👇-->
+        <style>
+                /* Preloader background */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff; /* change to your theme background */
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+    
+    /* Spinner animation */
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top-color: #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    /* Spinner keyframe */
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    /* Optional: fade-out class */
+    #preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+            </style>
+        <div id="preloader">
+            <div class="spinner"></div>
         </div>
-        <!-- preloader end -->
-        <!-- sidebar area start -->
+        <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const preloader = document.getElementById('preloader');
+                  setTimeout(() => {
+                    preloader.classList.add('fade-out');
+                    setTimeout(() => {
+                      preloader.style.display = 'none';
+                    }, 500);
+                  }, 1000); // hides after 1 second
+                });
+              </script>
+
+        <!-- preloader end 👆-->
+        <!-- sidebar area start 👇-->
         <div class="kidba-menu-sidebar">
             <div class="kidba-menu-sidebar-inner">
                 <div class="sidebar__close">
@@ -49,7 +105,8 @@
                 </div>
                 <div class="kidba-menu-sidebar-top mb-40">
                     <nav>
-                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs border-0" id="nav-tab"
+                            role="tablist">
                             <button
                                 class="active"
                                 id="nav-menu-tab"
@@ -58,8 +115,7 @@
                                 type="button"
                                 role="tab"
                                 aria-controls="nav-menu"
-                                aria-selected="true"
-                            >
+                                aria-selected="true">
                                 Menu
                             </button>
                             <button
@@ -69,8 +125,7 @@
                                 type="button"
                                 role="tab"
                                 aria-controls="nav-info"
-                                aria-selected="false"
-                            >
+                                aria-selected="false">
                                 Info
                             </button>
                         </div>
@@ -79,7 +134,8 @@
                 <div class="kidba-menu-sidebar-bottom">
                     <div class="logo mb-40">
                         <a href="index.html">
-                            <img src="assets/images/logos/logo.png" alt="Logo">
+                            <img src="assets/images/logos/tl-13-logo-light.png"
+                                alt="logo">
                         </a>
                     </div>
                     <div class="tab-content" id="nav-tabContent">
@@ -87,51 +143,43 @@
                             class="tab-pane fade show active"
                             id="nav-menu"
                             role="tabpanel"
-                            aria-labelledby="nav-menu-tab"
-                        >
+                            aria-labelledby="nav-menu-tab">
                             <div class="mobile-menu"></div>
                         </div>
                         <div
                             class="tab-pane fade"
                             id="nav-info"
                             role="tabpanel"
-                            aria-labelledby="nav-info-tab"
-                        >
+                            aria-labelledby="nav-info-tab">
                             <div class="kidba-sidebar-info-content-331">
                                 <ul>
                                     <li>
                                         <i class="icofont-clock-time"></i>
-                                        9:30am - 6:30pm, Mon -
-                    Sun
+                                        9:30am - 6:30pm, Mon - Sun
                                     </li>
                                     <li>
-                                        <a href="tel:http://80012345676587">
-                                            <i class="icofont-phone"></i> +800-123-4567 6587
-                                        </a
-                    >
+                                        <a href="#">
+                                            <i class="icofont-phone"></i>
+                                            +9955977 76450
+|
++9188911 52938
+                                        </a>
                                     </li>
                                     <li>
                                         <i class="icofont-google-map"></i>
-                                        Anmoore Road Brooklyn, NY
-                    230
+                                        Tsotne Dadiani Street 59 Tbilisi,Georgia
                                     </li>
                                 </ul>
                             </div>
                             <div class="kidba-sidebar-info-social-331">
                                 <a href="#" class="header-right-txt">
-                                    <i class="icofont-facebook">
-                                    </i
-                >
+                                    <i class="icofont-facebook"></i>
                                 </a>
                                 <a href="#" class="header-right-txt">
-                                    <i class="icofont-twitter">
-                                    </i
-                >
+                                    <i class="icofont-twitter"></i>
                                 </a>
                                 <a href="#" class="header-right-txt">
-                                    <i class="icofont-instagram">
-                                    </i
-                >
+                                    <i class="icofont-instagram"></i>
                                 </a>
                             </div>
                         </div>
@@ -140,505 +188,344 @@
             </div>
         </div>
         <div class="offwrap"></div>
-        <!-- sidebar area end -->
-        <!-- HEADER SECTI0N STARTS HERE -->
-        <div class="tl-header kb-header-11 tl-7-header-inner">
-            <div class="container position-relative">
-                <div class="row g-0 align-items-center">
-                    <div class="col-xl-2 col-lg-2">
-                        <div class="row align-items-center">
-                            <div class="col-lg-12 col-6">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/logos/logo.png" alt="Logo">
-                                    </a>
+        <!-- sidebar area end 👆-->
+        <!-- HEADER SECTION STARTS HERE -->
+        <div class="tl-header tl-16-header tl-8-header">
+            <div style="background-color: white" class="tl-8-bottom-header">
+                <div class="container">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 col-6">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img
+                                                src="assets/images/logos/tl-12-logo-light.png"
+                                                alt="KIDBA">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-lg-none d-flex justify-content-end col-6">
+                                    <button class="tl-hamburger navbar-toggler">
+                                        <i class="icofont-navigation-menu"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="d-lg-none d-flex justify-content-end col-6">
-                                <button class="tl-hamburger navbar-toggler">
-                                    <i class="icofont-navigation-menu"></i>
-                                </button>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="tl-menu-area d-none d-lg-block">
-                            <div class="tl-nav-menu tl-nav-menu-7">
-                                <ul class="justify-content-center">
-                                    <li class="tl-nav-item tl-7-nav-item tl-dropdown">
-                                        <a href="#" role="button">
-                                            Home
-                                            <i class="fa-regular fa-angle-down"></i>
-                                        </a>
-                                        <ul class="tl-submenu">
-                                            <li>
-                                                <a href="index.html">Online Education (LMS)</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-2.html">Kindergarten</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-3.html">School</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-4.html">College</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-5.html">University</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-6.html">Magazine</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-7.html">Dance School</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-8.html">Driving School</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-9.html">Music School</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-10.html">University Two</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-11.html">Magazine Two</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-12.html">Live Class</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-13.html">Online Course</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-14.html">Language Club</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-15.html">Cooking Academy</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-16.html">Online School</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-17.html">Marketplace</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-18.html">Art School</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-19.html">LMS Instructor</a>
-                                            </li>
-                                        </ul>
+                        <div class="col-8">
+                            <div class="tl-nav-menu">
+                                <ul
+                                    class="justify-content-center d-none d-lg-flex">
+                                    <li>
+                                        <a href="index.html">Home</a>
                                     </li>
-                                    <li class="tl-nav-item tl-7-nav-item tl-dropdown">
-                                        <a href="#" role="button">
-                                            Courses
-                                            <i class="fa-regular fa-angle-down"></i>
-                                        </a>
-                                        <ul class="tl-submenu">
-                                            <li>
-                                                <a href="course.html">Course One</a>
-                                            </li>
-                                            <li>
-                                                <a href="course-2.html">Course Two</a>
-                                            </li>
-                                            <li>
-                                                <a href="course-3.html">Course Three</a>
-                                            </li>
-                                            <li>
-                                                <a href="course-4.html">Course Four</a>
-                                            </li>
-                                            <li>
-                                                <a href="course-details.html">Course Details</a>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <a href="about.html">About us</a>
                                     </li>
-                                    <li class="tl-nav-item tl-7-nav-item tl-dropdown">
-                                        <a href="#" role="button">
-                                            Pages
-                                            <i class="fa-regular fa-angle-down"></i>
-                                        </a>
-                                        <ul class="tl-submenu">
-                                            <li class="tl-dropdown-2">
-                                                <a href="#">About
-                                                    <i class="fa-regular fa-angle-right">
-                                                    </i
-                        >
-                                                </a>
-                                                <ul class="tl-submenu tl-submenu-2">
-                                                    <li>
-                                                        <a href="about.html">About One</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-2.html">About Two</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-3.html">About Three</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-4.html">About Four</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-5.html">About Five</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-6.html">About Six</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-7.html">About Seven</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-8.html">About Eight</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="tl-dropdown-2">
-                                                <a href="#">Staff
-                                                    <i class="fa-regular fa-angle-right">
-                                                    </i
-                        >
-                                                </a>
-                                                <ul class="tl-submenu tl-submenu-2">
-                                                    <li>
-                                                        <a href="staff.html">Staff One</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="staff-2.html">Staff Two</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="staff-3.html">Staff Three</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="staff-4.html">Staff Four</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="staff-5.html">Staff Five</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="staff-6.html">Staff Six</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="staff-profile.html">Staff Profile</a>
-                                            </li>
-                                            <li class="tl-dropdown-2">
-                                                <a href="#">Event
-                                                    <i class="fa-regular fa-angle-right">
-                                                    </i
-                        >
-                                                </a>
-                                                <ul class="tl-submenu tl-submenu-2">
-                                                    <li>
-                                                        <a href="event.html">Event One</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="event-2.html">Event Two</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="event-3.html">Event Three</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="event-details.html">Event Details</a>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <a href="index.html#courses">Courses</a>
                                     </li>
-                                    <li class="tl-nav-item tl-7-nav-item tl-dropdown">
-                                        <a href="#" role="button">
-                                            Blog
-                                            <i class="fa-regular fa-angle-down"></i>
-                                        </a>
-                                        <ul class="tl-submenu">
-                                            <li class="tl-dropdown-2">
-                                                <a href="#">Blog
-                                                    <i class="fa-regular fa-angle-right">
-                                                    </i
-                        >
-                                                </a>
-                                                <ul class="tl-submenu tl-submenu-2">
-                                                    <li>
-                                                        <a href="blog.html">Blog One</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-2.html">Blog Two</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-3.html">Blog Three</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-4.html">Blog Four</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-5.html">Blog Five</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-6.html">Blog Six</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-7.html">Blog Seven</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blog-details.html">Blog Details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="tl-nav-item tl-7-nav-item tl-dropdown">
-                                        <a href="#">Contact
-                                            <i class="fa-regular fa-angle-down">
-                                            </i
-                    >
-                                        </a>
-                                        <ul class="tl-submenu">
-                                            <li>
-                                                <a href="contact.html">Contact One</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-2.html">Contact Two</a>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-2 d-lg-block d-none position-relative">
-                        <div class="kb-header-actions-11 d-flex justify-content-end">
-                            <button class="tl-searh-btn kb-searh-open-btn-11">
-                                <i class="fa-light fa-magnifying-glass"></i>
-                            </button>
-                            <a href="signup.html" class="tl-7-def-btn">Let's Dance</a>
-                        </div>
-                        <form class="tl-7-search-form-modal">
-                            <input
-                                type="search"
-                                name="Search"
-                                class="tl-7-nav-search"
-                                placeholder="Search items"
-                            >
-                            <button type="submit" class="tl-7-search-btn">
-                                <i class="fa-regular fa-magnifying-glass"></i>
-                            </button>
-                        </form>
+                        <!-- <div class="col-2 d-none d-lg-block">
+                            <div class="tl-header-actions d-flex justify-content-end align-items-center">
+                                <a href="#">Login</a>
+                                <a href="#" class="tl-def-btn">Register Now!</a>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- HEADER SECTI0N ENDS HERE -->
+        <!-- HEADER SECTION ENDS HERE -->
         <!-- BREADCRUMB STARTS HERE -->
-        <div class="tl-breadcrumb border-0 pt-120 pb-120">
+        <style>
+            .breadcrumb-section {
+  background-color: #f8f9fa; /* Light background */
+  padding: 60px 0;           /* Equivalent to pt-120 pb-120 */
+}
+
+.breadcrumb-section h1, 
+.breadcrumb-section .h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  color: #212529;
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding: 0 8px;
+  color: #6c757d;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .breadcrumb-section {
+    padding: 40px 0;
+  }
+
+  .breadcrumb-section h1, 
+  .breadcrumb-section .h3 {
+    font-size: 24px;
+  }
+
+  .breadcrumb {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+         </style>
+        <div style="padding-top: 9rem !important;"
+            class="breadcrumb-section py-5 bg-light">
+            <br>
             <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-md-6">
-                        <div class="banner-txt">
-                            <h1 class="tl-breadcrumb-title">Contact One</h1>
-                        </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h1 class="h3 mb-0">Contact</h1>
                     </div>
                     <div class="col-md-6">
-                        <ul class="tl-breadcrumb-nav d-flex">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="current-page">
-                                <span class="dvdr">
-                                    <i class="icofont-simple-right"></i>
-                                </span>
-                                <span>Contact</span>
-                            </li>
-                        </ul>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-md-end mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active"
+                                    aria-current="page">Contact us</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- BREADCRUMB ENDS HERE -->
         <!-- CONTACT SECTION STARTS HERE -->
         <section class="tl-7-contact">
             <div class="container">
-                <div class="row gy-4 gy-md-5 justify-content-between align-items-center">
+                <div
+                    class="row gy-4 gy-md-5 justify-content-between align-items-center">
                     <div class="col-lg-6">
                         <h2 class="tl-8-section-title">Get In Touch</h2>
-                        <form action="#" class="tl-7-contact-form">
-                            <div class="row g-3 g-md-4">
-                                <div class="col-6 col-xxs-12">
-                                    <input
-                                        type="text"
-                                        name="stud-name"
-                                        id="tl-7-stud-name"
-                                        placeholder="Your Name"
-                                    >
-                                </div>
-                                <div class="col-6 col-xxs-12">
-                                    <input
-                                        type="email"
-                                        name="stud-mail"
-                                        id="tl-7-stud-mail"
-                                        placeholder="Your Email"
-                                    >
-                                </div>
-                                <div class="col-6 col-xxs-12">
-                                    <input
-                                        type="number"
-                                        name="stud-age"
-                                        id="tl-7-stud-age"
-                                        placeholder="Your Age"
-                                    >
-                                </div>
-                                <div class="col-6 col-xxs-12">
-                                    <input
-                                        type="tel"
-                                        name="stud-number"
-                                        id="tl-7-stud-namer"
-                                        placeholder="Your Number"
-                                    >
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="stud-message" id="tl-7-stud-message" placeholder="Your Message"></textarea>
-                                </div>
-                                <div class="col">
-                                    <button type="submit" class="tl-7-def-btn">
-                                        Send Message
-                                    </button>
+                        <!-- Font Awesome CDN -->
+                        <link
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+                            rel="stylesheet">
+
+                        <style>
+    .contact-details {
+        background-color: #f9f9f9;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        max-width: 600px;
+        margin: auto;
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .contact-icon {
+        font-size: 24px;
+        color: #007BFF;
+        margin-right: 15px;
+        min-width: 30px;
+    }
+    .contact-text a {
+        color: #333;
+        text-decoration: none;
+    }
+    .contact-text a:hover {
+        color: #007BFF;
+    }
+    .contact-text h5 {
+        margin: 0 0 5px;
+        font-weight: 600;
+    }
+    .contact-text p {
+        margin: 0;
+    }
+</style>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i
+                                        class="fas fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <h5>Email</h5>
+                                    <p><a
+                                            href="mailto:topaimmail@gmail.com">topaimmail@gmail.com</a></p>
                                 </div>
                             </div>
-                        </form>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i
+                                        style="transform: rotate(90deg);"
+                                        class="fas fa-phone-alt"></i></div>
+                                <div class="contact-text">
+                                    <h5>Phone</h5>
+                                    <p><a href="">+9955977 76450
+                                        |
+                                        +9188911 52938</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i
+                                        class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact-text">
+                                    <h5>Location</h5>
+                                    <p>Tsotne Dadiani Street 59 Tbilisi,Georgia</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-lg-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2169.5878941785077!2d90.39650346418186!3d23.861328234002062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9884c556831%3A0xbf922ce212df4e67!2sSpeedDigit%20Software%20Solution!5e0!3m2!1sen!2sbd!4v1687239684068!5m2!1sen!2sbd" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.734090644594!2d44.79697037589686!3d41.7262564712588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472ca5240cd79%3A0xa0647580835b8eb4!2s59%20Tsotne%20Dadiani%20St%2C%20T&#39;bilisi%2C%20Georgia!5e0!3m2!1sen!2sin!4v1748252361181!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
         <!-- CONTACT SECTION ENDS HERE -->
+
         <!-- FOOTER SECTION STARTS HERE -->
-        <footer class="tl-footer tl-7-footer tl-8-footer">
+        <footer class="tl-footer tl-16-footer" data-bg-color="#03989e">
             <div class="tl-footer-top">
                 <div class="container">
-                    <div class="row gy-5 justify-content-between">
-                        <div class="col-lg-4 col-sm-6 col-12">
-                            <div class="tl-footer-widget tl-3-footer-widget">
+                    <div class="row">
+                        <div class="col-xxl-4 col-lg-4 col-md-6">
+                            <div
+                                class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
                                 <a href="index.html" class="logo">
-                                    <img src="assets/images/logos/logo.png" alt="Logo">
+                                    <img
+                                        src="assets/images/logos/footer.png"
+                                        alt="logo">
                                 </a>
-                                <ul class="tl-footer-links tl-3-footer-contact-infos">
+                                <p
+                                    class="tl-17-footer-widget-text tl-3-footer-widget">
+                                    TOP-AIM EDUCARE is your trusted partner for
+                                    studying abroad. We specialize in placing
+                                    students in high-demand programs such as
+                                    MBBS, Nursing, BBA, MBA, and others across
+                                    recognized universities in Georgia,
+                                    Uzbekistan, Armenia, Moldova, Russia,
+                                    Serbia, and other top international study
+                                    destinations.
+                                </p>
+                                <div class="tl-social tl-type-1">
+                                    <div class="tl-social-title">Follow :</div>
+                                    <div class="tl-social-links">
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-4 col-lg-4 col-md-6">
+                            <div
+                                class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
+                                <h5 class="tl-footer-widget-title">Quick
+                                    Link</h5>
+                                <ul class="tl-footer-links">
                                     <li>
-                                        <a href="tel:8812354873654" class="tl-footer-number">(88)123 5487 3654
-                                        </a
-                    >
+                                        <a href="#">Home</a>
                                     </li>
                                     <li>
-                                        <p class="tl-3-footer-address">
-                                            681 Pompton Ave, Cedar Grove, NJ 5479 United States
-                                        </p>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Courses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact us</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 order-1 order-sm-2 order-lg-1">
-                            <div class="row gy-5">
-                                <div class="col-6 col-xxs-12">
-                                    <div class="tl-footer-widget tl-3-footer-widget">
-                                        <h5 class="tl-footer-widget-title">Our Campus</h5>
-                                        <ul class="tl-footer-links">
-                                            <li>
-                                                <a href="#">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Courses</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Help Centre</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">News</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-xxs-12">
-                                    <div class="tl-footer-widget tl-3-footer-widget">
-                                        <h5 class="tl-footer-widget-title">Academics</h5>
-                                        <ul class="tl-footer-links">
-                                            <li>
-                                                <a href="#">Programming</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Art &amp; Design</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Business</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Engineering</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Photography</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12 order-2 order-sm-1 order-lg-2">
-                            <div class="tl-footer-widget tl-3-footer-widget">
-                                <h5 class="tl-footer-widget-title">Newsletter</h5>
-                                <p class="tl-3-nwsltr-txt">
-                                    Register now to get latest updates on promotions & coupons.
-                                </p>
-                                <form action="#" class="tl-3-nwsltr-form">
-                                    <input
-                                        type="email"
-                                        name="nwsltr-mail"
-                                        id="tl-3-nwsltr-mail"
-                                        class="tl-3-nwsltr-mail-input tl-8-nwsltr-mail-input"
-                                        placeholder="Enter Your Email"
-                                    >
-                                    <button class="tl-3-def-btn" id="tl-3-nwsltr-btn">
-                                        Get Newsletter
-                                    </button>
-                                </form>
+                        <div class="col-xxl-4 col-lg-4 col-md-6">
+                            <div
+                                class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
+                                <h5 class="tl-footer-widget-title">Official
+                                    Info</h5>
+                                <ul class="tl-footer-links">
+                                    <li>
+                                        <img
+                                            src="assets/images/tl-16/icon-location.png"
+                                            alt>
+                                        <span>2767 Sunrise Street, NY 1002,
+                                            USA</span>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/tl-16/icon-email.png"
+                                            alt>
+                                        <span>company@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/tl-16/icon-phone.png"
+                                            alt>
+                                        <span>+880 1234-569856</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tl-footer-bottom">
-                <div class="container">
-                    <div class="row gy-4 align-items-center">
-                        <div class="col-md-6">
-                            <p class="tl-3-copyright-txt m-0 text-center text-md-start">
-                                Copyright © 2023 All Rights Reserved by Talim
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="tl-footer-socials tl-3-footer-socials">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="tl-footer-bottom">
+                    <p
+                        class="tl-16-copyright-text tl-3-copyright-txt m-0 text-center text-md-start">
+                        Copyright © 2025 All Rights Reserved by Draway Media
+                    </p>
                 </div>
             </div>
         </footer>
         <!-- FOOTER SECTION STARTS HERE -->
+        <!-- JS FILES ↓ -->
         <!-- JS FILES ↓ -->
         <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
         <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -648,10 +535,12 @@
         <script src="assets/vendor/swiper-js/swiper-bundle.min.js"></script>
         <script src="assets/vendor/slick-slider/slick.min.js"></script>
         <script src="assets/vendor/bx-slider/jquery.bxslider.min.js"></script>
-        <script src="assets/vendor/eocjs-newsticker/eocjs-newsticker.js"></script>
+        <script
+            src="assets/vendor/eocjs-newsticker/eocjs-newsticker.js"></script>
         <script src="assets/vendor/syotimer/jquery.syotimer.min.js"></script>
+        <script src="assets/vendor/odometer/odometer.min.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
-    <!-- Mirrored from codebasket.xyz/template/talim/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 May 2025 05:01:09 GMT -->
+
 </html>

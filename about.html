@@ -35,21 +35,63 @@
         <link rel="stylesheet" href="assets/css/dark-v.css">
     </head>
     <body>
-        <!-- preloader start 👇-->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="loading-content">
-                        <img class="loading-logo-text"
-                            src="assets/images/logo/logo-text.png" alt="Kidba">
-                        <!-- <div class="loading-stroke">
-                            <img class="loading-logo-icon" src="assets/images/logo/logo-icon.png" alt="Pen">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- preloader end 👆-->
+            <!-- preloader start 👇-->
+            <style>
+                /* Preloader background */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff; /* change to your theme background */
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+    
+    /* Spinner animation */
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top-color: #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    /* Spinner keyframe */
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    /* Optional: fade-out class */
+    #preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+            </style>
+            <div id="preloader">
+                <div class="spinner"></div>
+              </div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const preloader = document.getElementById('preloader');
+                  setTimeout(() => {
+                    preloader.classList.add('fade-out');
+                    setTimeout(() => {
+                      preloader.style.display = 'none';
+                    }, 500);
+                  }, 1000); // hides after 1 second
+                });
+              </script>
+              
+            <!-- preloader end 👆-->
         <!-- sidebar area start 👇-->
         <div class="kidba-menu-sidebar">
             <div class="kidba-menu-sidebar-inner">
@@ -174,7 +216,7 @@
                                 <ul
                                     class="justify-content-center d-none d-lg-flex">
                                     <li>
-                                        <a href="#">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
                                     <li>
                                         <a href="about.html">About us</a>
@@ -346,7 +388,7 @@ Whether you're aiming for a career in medicine, business, or healthcare, TOP-AIM
     .tae-mission-vision {
   padding: 60px 20px;
   background-color: #f5f7fa;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .tae-wrapper {
@@ -374,6 +416,7 @@ Whether you're aiming for a career in medicine, business, or healthcare, TOP-AIM
   font-size: 16px;
   color: #333;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive layout */
@@ -407,134 +450,110 @@ Whether you're aiming for a career in medicine, business, or healthcare, TOP-AIM
           
           
 
-
-        <!-- FOOTER SECTION STARTS HERE ↓ -->
-        <footer class="tl-footer kb-10-footer tl-1-footer">
-            <div class="container">
-                <div class="tl-footer-top">
-                    <div class="row gy-5 justify-content-between">
-                        <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="tl-footer-widget kb-10-footer-widget">
-                                <a href="index.html" class="logo tl-footer-widget-title">
-                                    <img src="assets/images/logos/logo.png" alt="Logo">
+        <!-- FOOTER SECTION STARTS HERE -->
+        <footer class="tl-footer tl-16-footer" data-bg-color="#03989e">
+            <div class="tl-footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-4 col-lg-4 col-md-6">
+                            <div
+                                class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
+                                <a href="index.html" class="logo">
+                                    <img
+                                        src="assets/images/logos/footer.png"
+                                        alt="logo">
                                 </a>
-                                <p class="tl-1-footer-descr">
-                                    Nullam nulla eget dui efficitur tempor sit amet quis magna,
-                  Suspendisse.
+                                <p
+                                    class="tl-17-footer-widget-text tl-3-footer-widget">
+                                    TOP-AIM EDUCARE is your trusted partner for studying abroad. We specialize in placing students in high-demand programs such as MBBS, Nursing, BBA, MBA, and others across recognized universities in Georgia, Uzbekistan, Armenia, Moldova, Russia, Serbia, and other top international study destinations.
                                 </p>
-                                <div class="tl-1-footer-socials">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-brands fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 order-1 order-sm-2 order-lg-1">
-                            <div class="row gy-5">
-                                <div class="col-6 col-xxs-12">
-                                    <div class="tl-footer-widget kb-10-footer-widget">
-                                        <h5 class="tl-footer-widget-title">Our Campus</h5>
-                                        <ul class="tl-footer-links">
-                                            <li>
-                                                <a href="#">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Courses</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Help Centre</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">News</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-xxs-12">
-                                    <div class="tl-footer-widget kb-10-footer-widget">
-                                        <h5 class="tl-footer-widget-title">Academics</h5>
-                                        <ul class="tl-footer-links">
-                                            <li>
-                                                <a href="#">Programming</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Art &amp; Design</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Business</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Engineering</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Photography</a>
-                                            </li>
-                                        </ul>
+                                <div class="tl-social tl-type-1">
+                                    <div class="tl-social-title">Follow :</div>
+                                    <div class="tl-social-links">
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-google-plus-g"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 col-12 order-2 order-sm-1 order-lg-2">
-                            <div class="tl-footer-widget tl-3-footer-widget">
-                                <h5 class="tl-footer-widget-title">Subscribe</h5>
-                                <form action="#" class="tl-1-nwsltr-form">
-                                    <input
-                                        type="email"
-                                        name="nwsltr-mail"
-                                        id="tl-1-nwsltr-mail"
-                                        class="tl-1-nwsltr-mail-input"
-                                        placeholder="Get news & updates"
-                                    >
-                                    <button class="tl-1-nwsltr-btn" id="tl-1-nwsltr-btn">
-                                        @
-                                    </button>
-                                </form>
-                                <p class="tl-1-nwsltr-txt">
-                                    Register now to get latest updates on promotions & coupons.
-                                </p>
+                     
+                    
+                        <div class="col-xxl-4 col-lg-4 col-md-6">
+                            <div
+                                class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
+                                <h5 class="tl-footer-widget-title">Quick
+                                    Link</h5>
+                                <ul class="tl-footer-links">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Courses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="tl-footer-bottom kb-10-footer-bottom">
-                    <div class="row gy-4 align-items-center">
-                        <div class="col-md-6">
-                            <p class="tl-1-copyright-txt m-0">
-                                Copyright &copy; 2023 All Rights Reserved by Talim
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="tl-1-footer-bottom-actions">
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Term of Service</a>
-                                </li>
-                            </ul>
+                        <div class="col-xxl-4 col-lg-4 col-md-6">
+                            <div
+                                class="tl-footer-widget tl-17-footer-widget tl-3-footer-widget">
+                                <h5 class="tl-footer-widget-title">Official
+                                    Info</h5>
+                                <ul class="tl-footer-links">
+                                    <li>
+                                        <img
+                                            src="assets/images/tl-16/icon-location.png"
+                                            alt>
+                                        <span>2767 Sunrise Street, NY 1002,
+                                            USA</span>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/tl-16/icon-email.png"
+                                            alt>
+                                        <span>company@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/tl-16/icon-phone.png"
+                                            alt>
+                                        <span>+880 1234-569856</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="tl-footer-bottom">
+                    <p
+                        class="tl-16-copyright-text tl-3-copyright-txt m-0 text-center text-md-start">
+                        Copyright © 2025 All Rights Reserved by Draway Media
+                    </p>
+                </div>
+            </div>
         </footer>
-        <!-- FOOTER SECTION ENDS HERE ↑ -->
+        <!-- FOOTER SECTION STARTS HERE -->
+        <!-- JS FILES ↓ -->
         <!-- JS FILES ↓ -->
         <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
         <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -544,11 +563,12 @@ Whether you're aiming for a career in medicine, business, or healthcare, TOP-AIM
         <script src="assets/vendor/swiper-js/swiper-bundle.min.js"></script>
         <script src="assets/vendor/slick-slider/slick.min.js"></script>
         <script src="assets/vendor/bx-slider/jquery.bxslider.min.js"></script>
-        <script src="assets/vendor/eocjs-newsticker/eocjs-newsticker.js"></script>
+        <script
+            src="assets/vendor/eocjs-newsticker/eocjs-newsticker.js"></script>
         <script src="assets/vendor/syotimer/jquery.syotimer.min.js"></script>
         <script src="assets/vendor/odometer/odometer.min.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
-    <!-- Mirrored from codebasket.xyz/template/talim/light/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 May 2025 05:01:07 GMT -->
-</html>
+
+    </html>
