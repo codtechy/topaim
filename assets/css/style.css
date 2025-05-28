@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&amp;display=swap");
 
 
- 
+
 
 :root {
   --tl-btn-bg: #F4B826;
@@ -1861,7 +1861,7 @@ textarea::placeholder {
   top: 0;
   width: 320px;
   height: 100%;
-  background: #1b133f none repeat scroll 0 0;
+  background: #03989e none repeat scroll 0 0;
   -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
   box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
@@ -4067,7 +4067,8 @@ textarea::placeholder {
   line-height: 50px;
   width: 50px;
   font-size: 24px;
-  background: linear-gradient(145deg, #dade1c, #9428ea);
+  background-color: #03989e;
+  /* background: linear-gradient(145deg, #dade1c, #9428ea); */
   color: #fff;
   padding: 0;
 }
