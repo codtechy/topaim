@@ -33,65 +33,68 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- dark version css -->
         <link rel="stylesheet" href="assets/css/dark-v.css">
+      
     </head>
     <body>
-            <!-- preloader start 👇-->
-            <style>
-                /* Preloader background */
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff; /* change to your theme background */
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.5s ease;
-    }
-    
-    /* Spinner animation */
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 4px solid #ccc;
-      border-top-color: #3498db;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    
-    /* Spinner keyframe */
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    
-    /* Optional: fade-out class */
-    #preloader.fade-out {
-      opacity: 0;
-      visibility: hidden;
-    }
-    
-            </style>
-            <div id="preloader">
-                <div class="spinner"></div>
-              </div>
-              <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  const preloader = document.getElementById('preloader');
-                  setTimeout(() => {
-                    preloader.classList.add('fade-out');
-                    setTimeout(() => {
-                      preloader.style.display = 'none';
-                    }, 500);
-                  }, 1000); // hides after 1 second
-                });
-              </script>
-              
-            <!-- preloader end 👆-->
+
+        
+        <!-- preloader start 👇-->
+        <style>
+            /* Preloader background */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* change to your theme background */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner keyframe */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: fade-out class */
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+        </style>
+        <div id="preloader">
+            <div class="spinner"></div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const preloader = document.getElementById('preloader');
+              setTimeout(() => {
+                preloader.classList.add('fade-out');
+                setTimeout(() => {
+                  preloader.style.display = 'none';
+                }, 500);
+              }, 1000); // hides after 1 second
+            });
+          </script>
+          
+        <!-- preloader end 👆-->
         <!-- sidebar area start 👇-->
         <div class="kidba-menu-sidebar">
             <div class="kidba-menu-sidebar-inner">
@@ -103,38 +106,11 @@
                         <span>close</span>
                     </button>
                 </div>
-                <div class="kidba-menu-sidebar-top mb-40">
-                    <nav>
-                        <div class="nav nav-tabs border-0" id="nav-tab"
-                            role="tablist">
-                            <button
-                                class="active"
-                                id="nav-menu-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#nav-menu"
-                                type="button"
-                                role="tab"
-                                aria-controls="nav-menu"
-                                aria-selected="true">
-                                Menu
-                            </button>
-                            <button
-                                id="nav-info-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#nav-info"
-                                type="button"
-                                role="tab"
-                                aria-controls="nav-info"
-                                aria-selected="false">
-                                Info
-                            </button>
-                        </div>
-                    </nav>
-                </div>
+                
                 <div class="kidba-menu-sidebar-bottom">
                     <div class="logo mb-40">
                         <a href="index.html">
-                            <img src="assets/images/logos/tl-13-logo-light.png"
+                            <img src="assets/images/logos/footer.png"
                                 alt="logo">
                         </a>
                     </div>
@@ -186,6 +162,7 @@
             </div>
         </div>
         <div class="offwrap"></div>
+        
         <!-- sidebar area end 👆-->
         <!-- HEADER SECTION STARTS HERE -->
         <div class="tl-header tl-16-header tl-8-header">
@@ -216,7 +193,7 @@
                                 <ul
                                     class="justify-content-center d-none d-lg-flex">
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="#">Home</a>
                                     </li>
                                     <li>
                                         <a href="about.html">About us</a>
@@ -241,6 +218,36 @@
             </div>
         </div>
         <!-- HEADER SECTION ENDS HERE -->
+        <!-- BANNER SECTION STARTS HERE -->
+  <!-- Font Awesome CDN for WhatsApp icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .whatsapp-icon {
+        margin-top: 15px;
+    }
+</style>
+
+<!-- WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=+918891152938&text=Hai" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+</a>
+
         <!-- BREADCRUMB STARTS HERE -->
          <style>
             .breadcrumb-section {
