@@ -1699,7 +1699,7 @@ textarea::placeholder {
 }
 
 .tl-def-btn {
-  background-color: var(--tl-btn-bg);
+  background-color: #03989e;
   height: 50px;
   line-height: 50px;
   display: inline-block;
@@ -1707,7 +1707,7 @@ textarea::placeholder {
   padding: 0 30px;
   text-transform: capitalize;
   font-weight: 500;
-  border: 1px solid var(--tl-btn-bg);
+  border: 1px solid white;
   position: relative;
   overflow: hidden;
   isolation: isolate;
